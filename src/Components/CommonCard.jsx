@@ -15,7 +15,6 @@ const CommonCard = ({
       href={html_url}
       target="_blank"
       textDecoration="none"
-      boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px"
       borderRadius="10px"
     >
       <Card
@@ -25,7 +24,7 @@ const CommonCard = ({
       >
         <Image
           objectFit="cover"
-          maxW={{ base: "100%", sm: "200px" }}
+          maxW={{ base: "70%", sm: "200px" }}
           src={avatar}
           alt={name}
           margin={"auto"}
@@ -42,10 +41,10 @@ const CommonCard = ({
           </CardBody>
 
           <CardFooter display="flex" justifyContent="space-between">
-            <Button variant="solid" colorScheme="blue">
+            <Button variant="outline" colorScheme="blue">
               🖇{forks_count}
             </Button>
-            <Button variant="solid" colorScheme="blue">
+            <Button variant="outline" colorScheme="blue">
               ⭐{stargazers_count}
             </Button>
           </CardFooter>

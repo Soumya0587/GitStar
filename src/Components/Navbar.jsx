@@ -7,7 +7,7 @@ const Navbar = () => {
     <Box 
     h="50px"
     display="flex" alignItems='center' justifyContent='space-around'
-    bg="purple"
+    bg="grey"
     position="sticky"
     top="0"
     left="0"

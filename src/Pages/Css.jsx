@@ -14,13 +14,13 @@ const Css = () => {
       .get(
         "https://api.github.com/search/repositories?q=stars:%3E1+language:css?sort:interactions-desc"
       )
-      .then((res) => {
+      .then(res => {
         setData(res.data.items);
         
         setLoader(false);
       })
-      .catch((err) => {
-        alert(err);
+      .catch(err => {
+        alert("error")
         setLoader(false);
       });
   }, []);
